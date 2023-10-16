@@ -1,0 +1,175 @@
+/* LoginPage.css */
+
+/* Common styles for both mobile and web */
+.login-page {
+  background-color: #e7f3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  /* max-height: 10rem; */
+}
+
+.side-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  padding: 10rem;
+}
+
+.welcome-text {
+  font-size: 2rem; 
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  /* Add any other styles you want */
+}
+
+.login-image img {
+  max-width: 20rem;
+  height: auto;
+}
+
+.login-form {
+  flex: 1;
+  padding: 2rem;
+  max-width: 20rem;
+  max-height: 30rem;
+  background-color: #fffefe;
+  border-radius: 0.3125rem; /* 5px converted to rem */
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2); /* 5px converted to rem */
+  display: auto;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1.25rem; /* 20px converted to rem */
+}
+
+.form-group {
+  margin-bottom: 0.625rem; /* 10px converted to rem */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 20rem;
+  height: 1.5rem;
+  padding: 0.3rem;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.2rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3d80c7;
+}
+
+.text {
+  text-align: left;
+  padding: 0.2rem; /* 2px converted to rem */
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 0.0625rem; /* 1px converted to rem */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 0.875rem; /* 14px converted to rem */
+  cursor: pointer;
+  color: #555;
+}
+
+.error-message {
+  color: rgba(255, 0, 0, 0.897);
+  font-size: 0.75rem; /* 12px converted to rem */
+  padding: 0.125rem; /* 2px converted to rem */
+  text-align: left;
+}
+
+.login-button {
+  display: block;
+  width: 10rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #3a8ae6;
+  color: #fff;
+  border: none;
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.signup-link a {
+  color: #007bff;
+}
+
+.success-modal {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-modal-content {
+  background-color: #fff;
+  padding: 1.25rem; /* 20px converted to rem */
+  border-radius: 0.25rem; /* 4px converted to rem */
+  width: 18.75rem; /* 300px converted to rem */
+  height: 18.75rem; /* 300px converted to rem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  /* space between each row item */
+  gap: 1.25rem; /* 20px converted to rem */
+}
+
+.success-image img {
+  max-width: 50%;
+  height: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0.0625rem; /* 1px converted to rem */
+  cursor: pointer;
+  font-size: 1.5rem; /* 24px converted to rem */
+  padding: 0.3125rem; /* 5px converted to rem */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .side-page {
+    width: 100%; /* Expand to full width on mobile */
+  }
+
+  .login-form {
+    max-width: 100%; /* Expand to full width on mobile */
+  }
+}
