@@ -8,8 +8,8 @@ EduVibes, our web app, offers a comprehensive solution for students. It provides
 
 To run the web application locally, follow these steps:
 
-**Server**  
-1. Run `StockTradingApplication.java`  
+**Server** [Not yet implemented]  
+1. Run `EduVibes_study_app\study_app_server\src\main\java\com\eduvibes\App.java`  
 2. Access the application in your web browser at `http://localhost:8080`.
 
 **Client**  
