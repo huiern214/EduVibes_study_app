@@ -4,6 +4,9 @@ import Layout from './components/Layout';
 import Navbar from './components/sidebar/Navbar';
 import LoginPage from './components/login/LoginPage';
 import Profile from './components/profile/Profile';
+import Flashcard from './components/flashcard/FlashcardContainer';
+
+
 
 // ss
 function App() {
@@ -16,6 +19,7 @@ function App() {
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/flashcards" element={<Flashcard />}></Route>
             <Route path="*" element={<h1>Not Found</h1>}></Route>
           </Route>
       </Routes>
@@ -23,5 +27,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
