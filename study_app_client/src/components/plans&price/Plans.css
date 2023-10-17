@@ -1,0 +1,656 @@
+.PLANS-AND-PRICING {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .PLANS-AND-PRICING .div {
+    background-color: #ffffff;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .PLANS-AND-PRICING .overlap {
+    height: 740px;
+    left: 28px;
+    position: absolute;
+    top: 224px;
+    width: 1316px;
+  }
+  
+  .PLANS-AND-PRICING .table {
+    height: 667px;
+    left: 0;
+    position: absolute;
+    top: 73px;
+    width: 1283px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-group {
+    height: 668px;
+    left: -1px;
+    position: relative;
+    top: -1px;
+    width: 1285px;
+  }
+  
+  .PLANS-AND-PRICING .rectangle {
+    -webkit-backdrop-filter: blur(35px) brightness(100%);
+    backdrop-filter: blur(35px) brightness(100%);
+    background-color: #ffffff80;
+    border-radius: 26px;
+    height: 610px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1285px;
+  }
+  
+  .PLANS-AND-PRICING .intro {
+    height: 615px;
+    left: 78px;
+    position: absolute;
+    top: 53px;
+    width: 283px;
+  }
+  
+  .PLANS-AND-PRICING .button {
+    all: unset;
+    box-sizing: border-box;
+    height: 59px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 556px;
+    width: 283px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-group-2 {
+    border-radius: 24px;
+    height: 61px;
+    left: -1px;
+    position: relative;
+    top: -1px;
+    width: 285px;
+  }
+  
+  .PLANS-AND-PRICING .rectangle-2 {
+    background-color: #5e7bd5;
+    border: 0px none;
+    border-radius: 24px;
+    height: 61px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 285px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper {
+    color: #ffffff;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 17px;
+    width: 131px;
+  }
+  
+  .PLANS-AND-PRICING .frame {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 131px;
+    left: 16px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .PLANS-AND-PRICING .price {
+    height: 46px;
+    position: relative;
+    width: 160px;
+  }
+  
+  .PLANS-AND-PRICING .element {
+    color: #221c4e;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 70px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 46px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .PLANS-AND-PRICING .title-and-desc {
+    height: 88px;
+    margin-bottom: -23px;
+    position: relative;
+    width: 232px;
+  }
+  
+  .PLANS-AND-PRICING .intro-2 {
+    color: #221c4e;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 28px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -1px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    height: 59px;
+    left: 968px;
+    overflow: hidden;
+    position: absolute;
+    top: 681px;
+    width: 283px;
+  }
+  
+  .PLANS-AND-PRICING .rectangle-3 {
+    background-color: #5e7bd5;
+    border-radius: 24px;
+    height: 61px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 285px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-2 {
+    color: var(--white);
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 17px;
+    width: 131px;
+  }
+  
+  .PLANS-AND-PRICING .price-wrapper {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80px;
+    left: 984px;
+    position: absolute;
+    top: 125px;
+  }
+  
+  .PLANS-AND-PRICING .element-wrapper {
+    height: 66px;
+    overflow: hidden;
+    position: relative;
+    width: 298px;
+  }
+  
+  .PLANS-AND-PRICING .element-2 {
+    color: #221c4e;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 70px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 46px;
+    position: absolute;
+    top: 9px;
+    width: 533px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-3 {
+    color: #838099;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 17px;
+    font-weight: 500;
+    left: 1250px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 196px;
+  }
+  
+  .PLANS-AND-PRICING .group {
+    height: 56px;
+    left: 77px;
+    position: absolute;
+    top: 283px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .check-circle {
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 20px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-4 {
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 352px;
+  }
+  
+  .PLANS-AND-PRICING .group-2 {
+    height: 56px;
+    left: 77px;
+    position: absolute;
+    top: 359px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-3 {
+    height: 56px;
+    left: 77px;
+    position: absolute;
+    top: 412px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-4 {
+    height: 56px;
+    left: 77px;
+    position: absolute;
+    top: 483px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-5 {
+    height: 56px;
+    left: 77px;
+    position: absolute;
+    top: 538px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-group-wrapper {
+    height: 625px;
+    left: 494px;
+    position: absolute;
+    top: 0;
+    width: 405px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-2 {
+    height: 625px;
+    position: relative;
+    width: 403px;
+  }
+  
+  .PLANS-AND-PRICING .rectangle-4 {
+    background-color: #221c4e;
+    border-radius: 40px;
+    height: 625px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 360px;
+  }
+  
+  .PLANS-AND-PRICING .div-wrapper {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    left: 28px;
+    position: absolute;
+    top: 75px;
+  }
+  
+  .PLANS-AND-PRICING .price-2 {
+    height: 46px;
+    position: relative;
+    width: 152px;
+  }
+  
+  .PLANS-AND-PRICING .element-3 {
+    color: #ffffff;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 46px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+  }
+  
+  .PLANS-AND-PRICING .img {
+    height: 27px;
+    left: 232px;
+    position: absolute;
+    top: 25px;
+    width: 115px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-5 {
+    color: #838099;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 17px;
+    font-weight: 500;
+    left: 180px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 106px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-6 {
+    color: #bb6bd9;
+    font-family: "Poppins-ExtraBold", Helvetica;
+    font-size: 10px;
+    font-weight: 800;
+    left: 246px;
+    letter-spacing: 0.83px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+  }
+  
+  .PLANS-AND-PRICING .group-6 {
+    height: 56px;
+    left: 25px;
+    position: absolute;
+    top: 178px;
+    width: 326px;
+  }
+  
+  .PLANS-AND-PRICING .check-circle-2 {
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 17px;
+  }
+  
+  .PLANS-AND-PRICING .unlimited-access-to {
+    color: #f5efef;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 303px;
+  }
+  
+  .PLANS-AND-PRICING .group-7 {
+    height: 56px;
+    left: 25px;
+    position: absolute;
+    top: 267px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-7 {
+    color: #f5efef;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 352px;
+  }
+  
+  .PLANS-AND-PRICING .group-8 {
+    height: 56px;
+    left: 25px;
+    position: absolute;
+    top: 329px;
+    width: 319px;
+  }
+  
+  .PLANS-AND-PRICING .p {
+    color: #f5efef;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 293px;
+  }
+  
+  .PLANS-AND-PRICING .group-9 {
+    height: 56px;
+    left: 28px;
+    position: absolute;
+    top: 411px;
+    width: 311px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-8 {
+    color: #f5efef;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 285px;
+  }
+  
+  .PLANS-AND-PRICING .group-10 {
+    height: 56px;
+    left: 25px;
+    position: absolute;
+    top: 488px;
+    width: 311px;
+  }
+  
+  .PLANS-AND-PRICING .button-2 {
+    all: unset;
+    box-sizing: border-box;
+    height: 44px;
+    left: 546px;
+    overflow: hidden;
+    position: absolute;
+    top: 546px;
+    width: 232px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-3 {
+    background-color: #bb6bd9;
+    border-radius: 24px;
+    height: 46px;
+    left: -1px;
+    position: relative;
+    top: -1px;
+    width: 234px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-9 {
+    color: var(--white);
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    left: 69px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+  }
+  
+  .PLANS-AND-PRICING .group-11 {
+    height: 56px;
+    left: 936px;
+    position: absolute;
+    top: 296px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-12 {
+    height: 56px;
+    left: 936px;
+    position: absolute;
+    top: 372px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-13 {
+    height: 56px;
+    left: 936px;
+    position: absolute;
+    top: 447px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-14 {
+    height: 56px;
+    left: 936px;
+    position: absolute;
+    top: 518px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .group-15 {
+    height: 56px;
+    left: 936px;
+    position: absolute;
+    top: 596px;
+    width: 378px;
+  }
+  
+  .PLANS-AND-PRICING .check-circle-3 {
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 20px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-10 {
+    color: #000000;
+    font-family: "Poppins-Medium", Helvetica;
+    font-size: 28px;
+    font-weight: 500;
+    left: 989px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 213px;
+    width: 147px;
+  }
+  
+  .PLANS-AND-PRICING .overlap-4 {
+    height: 69px;
+    left: 88px;
+    position: absolute;
+    top: 45px;
+    width: 1288px;
+  }
+  
+  .PLANS-AND-PRICING .PLANS-PRICING {
+    color: #000000;
+    font-family: "Paytone One-Regular", Helvetica;
+    font-size: 70px;
+    font-weight: 400;
+    height: 30px;
+    left: 0;
+    letter-spacing: -2.8px;
+    line-height: 70px;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    white-space: nowrap;
+    width: 1264px;
+  }
+  
+  .PLANS-AND-PRICING .frame-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 29.8px;
+    height: 69px;
+    left: 1107px;
+    position: absolute;
+    top: 0;
+    width: 181px;
+  }
+  
+  .PLANS-AND-PRICING .frame-2 {
+    align-items: flex-start;
+    background-color: #ed0f0f;
+    border-radius: 17.03px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 14.19px;
+    padding: 15.61px 25.55px;
+    position: relative;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-11 {
+    color: #ffffff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 19.9px;
+    font-weight: 700;
+    letter-spacing: -0.79px;
+    line-height: 19.9px;
+    margin-top: -1.42px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .PLANS-AND-PRICING .frame-3 {
+    align-items: center;
+    display: inline-flex;
+    gap: 34.06px;
+    left: 620px;
+    position: absolute;
+    top: 118px;
+  }
+  
+  .PLANS-AND-PRICING .text-wrapper-12 {
+    color: #221c4e;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.64px;
+    line-height: 32px;
+    margin-top: -1.42px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
