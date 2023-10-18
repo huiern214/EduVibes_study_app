@@ -5,6 +5,11 @@ import Navbar from './components/sidebar/Navbar';
 import LoginPage from './components/login/LoginPage';
 import Profile from './components/profile/Profile';
 import Forum from './components/forum/Forum';
+import Flashcard from './components/flashcard/FlashcardContainer';
+import Frotpage from "./components/frontpage/Frontpage";
+import PlansAndPricing from './components/plans&price/Plans';
+
+
 
 // ss
 function App() {
@@ -16,7 +21,10 @@ function App() {
           <Route path="/" element={<Layout/>}>
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/frontpage" element={<Frotpage />} />
+            <Route path="/plansprice" element={<PlansAndPricing />} />
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/flashcards" element={<Flashcard />}></Route>
             <Route path="/forum" element={<Forum />}></Route>
             <Route path="*" element={<h1>Not Found</h1>}></Route>
 
@@ -26,5 +34,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

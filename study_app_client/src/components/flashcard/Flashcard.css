@@ -1,0 +1,78 @@
+.flashcard-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust this to the desired height */
+}
+
+.flashcard {
+  flex: 1;
+  width: 800px;
+  border: 1px solid #ccc;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* Add this property */
+  margin-top: 50px; /* Add margin to the top */
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+  background-color: #3d80c7; /* Set the background color to blue when flipped */
+}
+
+.flashcard .front,
+.flashcard .back {
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 1.5rem;
+}
+
+.flashcard .front {
+  color: #3d80c7;
+}
+
+.flashcard .back {
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flashcard-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px 0; /* Add padding to create space between the flashcard and navigation */
+  border-top: 1px solid #ccc; /* Add a separator between the flashcard and navigation */
+}
+
+.flashcard-navigation button {
+  background-color: #3d80c7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.flashcard-navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.flashcard-navigation button:not(:disabled):hover {
+  background-color: #2a5e9f;
+}
