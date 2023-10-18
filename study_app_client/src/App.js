@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Navbar from './components/sidebar/Navbar';
 import LoginPage from './components/login/LoginPage';
 import Profile from './components/profile/Profile';
+import Forum from './components/forum/Forum';
 
 // ss
 function App() {
@@ -16,7 +17,9 @@ function App() {
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/forum" element={<Forum />}></Route>
             <Route path="*" element={<h1>Not Found</h1>}></Route>
+
           </Route>
       </Routes>
       </BrowserRouter>
