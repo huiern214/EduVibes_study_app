@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* General Styles */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar i {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .topics {
+    margin-top: 20px;
+  }
+  
+  .topics h2 {
+    font-size: 20px;
+  }
+  
+  /* Forum Post Styles */
+  .forum-post {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 10px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-section img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .post-content img {
+    max-width: 100%;
+  }
+  
+  .post-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .comment-content input {
+    flex: 1;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .comment-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-actions i {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
