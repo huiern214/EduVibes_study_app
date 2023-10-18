@@ -8,10 +8,8 @@ import Forum from './components/forum/Forum';
 import Flashcard from './components/flashcard/FlashcardContainer';
 import Frotpage from "./components/frontpage/Frontpage";
 import PlansAndPricing from './components/plans&price/Plans';
+import HealGPT from './components/healgpt/HealGPT';
 
-
-
-// ss
 function App() {
   return (
     <div className="App">
@@ -26,6 +24,7 @@ function App() {
             <Route path="/profile" element={<Profile />}></Route>
             <Route path="/flashcards" element={<Flashcard />}></Route>
             <Route path="/forum" element={<Forum />}></Route>
+            <Route path="/healgpt" element={<HealGPT />}></Route>
             <Route path="*" element={<h1>Not Found</h1>}></Route>
 
           </Route>
@@ -34,6 +33,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
