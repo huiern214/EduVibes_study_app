@@ -24,7 +24,7 @@ export const SidebarData = [
   },
   {
     title: 'HealGPT',
-    path: '/healthgpt',
+    path: '/healgpt',
     icon: <IoIcons.IoIosChatboxes />,
     cName: 'nav-text'
   },
