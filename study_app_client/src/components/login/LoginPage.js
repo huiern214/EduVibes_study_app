@@ -120,15 +120,14 @@ function LoginPage() {
     handleSignInClick(); // Reset form to sign-in mode
   };
 
+  
   return (
     <div className="login-page">
       <div className="side-page">
-        <div className="logo">
           <h1 className="welcome-text">Welcome to</h1>
-          <img src={logo} alt="EduVibes Logo" />
-        </div>
+          <img src={logo} alt="EduVibes Logo" className="logo"/>
         <div className="login-image">
-          <img src={loginImage} alt="Login" />
+          <img src={loginImage} alt="Login" className="login-image"/>
         </div>
       </div>
       <div className="login-form">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Forum.css';
 import biologyImage from './biology.png';
 import chemistryImage from './chemistry.png';
@@ -6,17 +6,16 @@ import physicsImage from './physics.png';
 import historyImage from './history.png';
 import compImage from './comp.png';
 import mathsImage from './maths.png';
-import search from './search.png';
-import camera from './camera.png';
 import profile from './profile.png';
 import profile2 from './profile2.png';
 import postImage from './postImage.png';
-import { FaHeart, FaComment, FaShare, FaUser, FaCheckCircle } from 'react-icons/fa';
+import coin from './coin.png';
+import { FaHeart, FaComment, FaShare, FaUser, FaCheckCircle, FaThumbsUp, FaQuestionCircle, FaPen, FaCamera} from 'react-icons/fa';
 
 const YourComponent = () => {
-  // Define functions to handle clicks
+
   const handleAskClick = () => {
-    // Add your Ask click logic here
+
     alert("Ask clicked");
   }
 
@@ -25,14 +24,25 @@ const YourComponent = () => {
     alert("Post clicked");
   }
 
+  const [count, setCount] = useState(0);
+
+  const handleThumbClick = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div>
       <div className="container">
         <div className="search-bar">
-          <img src={search} alt="search icon" />
+
           <input type="text" placeholder="Search..." />
-          <img src={camera} alt="camera icon" />
+
+          <div className="right">
+          <FaCamera className="camera-icon" />
+          </div>
         </div>
+
+
         <div className="topics-container">
           <h2>Topics</h2>
           <div className="topic">
@@ -65,17 +75,31 @@ const YourComponent = () => {
       <div className="middle">
         <h2>Forum</h2>
         <div className="forum-post">
+          <div className="row">
           <div className="profile-picture"><img src={profile} alt="profile" /></div>
           <div className="post-content">
             <input type="text" className="text-box" placeholder="Wanna ask or share something?" />
           </div>
-          <div className="action-buttons">
-            <span className="clickable" onClick={handleAskClick}>Ask</span>
-            <div className="vertical-line"></div>
-            <span className="clickable" onClick={handlePostClick}>Post</span>
           </div>
-        </div>
-      </div>
+
+          <div className="action-buttons">
+  <div className="button">
+    <div className="icon">
+      <FaQuestionCircle />
+    </div>
+    <span className="clickable" onClick={handleAskClick}>Ask</span>
+  </div>
+  <div className="vertical-line"></div>
+  <div className="button">
+    <div className="icon">
+      <FaPen />
+    </div>
+    <span className="clickable" onClick={handlePostClick}>Post</span>
+  </div>
+</div>
+</div>
+        
+      
 
       <div class="post">
         <div class="post-header">
@@ -86,6 +110,9 @@ const YourComponent = () => {
             <p class="user-name">Coco</p>
             <p class="time">3 hours ago</p>
           </div>
+          <span class="coin-icon">
+          <img src={coin} alt="coin icon" />
+        </span>
           <p class="badge">50</p>
         </div>
         <div className="question">
@@ -118,21 +145,32 @@ const YourComponent = () => {
     <FaUser />
   </div>
   <div className="comment-input">
-    <div className="user-info">
+  <input
+    type="text"
+    className="input-field"
+    placeholder="The answer is..."
+    
+  />
+  
+  <div className="user-info">
     <span>Alex</span>
-    </div>
-    <input
-      type="text"
-      placeholder="The answer is..."
-    />
-    <div className="accepted">
-      <span>Accepted</span>
-      <FaCheckCircle /> {/* Assuming you're using Font Awesome for the tick icon */}
-    </div>
+  </div>
+  <div className="accepted">
+  <span>Accepted</span>
+
+  <FaCheckCircle />
+</div>
+{/* type here */}
+<div className="thumb-box" onClick={handleThumbClick}>
+  <div className="thumb-icon">
+    <FaThumbsUp />
+    {count}
   </div>
 </div>
+</div>
       </div>
-      {/* Add more posts here */}
+    </div>
+    </div>
     </div>
   );
 };

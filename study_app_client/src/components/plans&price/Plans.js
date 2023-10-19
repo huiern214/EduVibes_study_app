@@ -1,5 +1,7 @@
 import React from "react";
 import "./Plans.css";
+import tick from './tick.png'; 
+import rect from './rect.png';
 
 const PlansAndPricing = () => {
   return (
@@ -40,24 +42,24 @@ const PlansAndPricing = () => {
           </div>
           <div className="text-wrapper-3">/month</div>
           <div className="group">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
+            <img src={tick} alt="tick" className="check-circle" />
             <p className="text-wrapper-4">Access up to 10 e-learning materials</p>
           </div>
           <div className="group-2">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
+            <img src={tick} alt="tick" className="check-circle" />
             <p className="text-wrapper-4">5 posts per week in Forum</p>
           </div>
           <div className="group-3">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
-            <p className="text-wrapper-4">Access up to 3 times per day AI- mental health chatbot</p>
+            <img src={tick} alt="tick" className="check-circle" />
+            <p className="text-wrapper-4">Access up to 3 times per day AI-mental health chatbot</p>
           </div>
           <div className="group-4">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
+            <img src={tick} alt="tick" className="check-circle" />
             <div className="text-wrapper-4">AI-generated revision table</div>
           </div>
           <div className="group-5">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
-            <p className="text-wrapper-4">Access up to 5 times per week AI-generated flashcard &amp; quiz</p>
+            <img src={tick} alt="tick" className="check-circle" />
+            <p className="text-wrapper-4">Access up to 5 times per week AI-generated flashcard & quiz</p>
           </div>
           <div className="overlap-group-wrapper">
             <div className="overlap-2">
@@ -67,30 +69,30 @@ const PlansAndPricing = () => {
                   <div className="element-3">RM 5.90</div>
                 </div>
               </div>
-              <img className="img" alt="Rectangle" src="Rectangle.svg" />
+              <img src={rect} alt="rectangle" className="img" />
               <div className="text-wrapper-5">/month</div>
               <div className="text-wrapper-6">MOST POPULAR</div>
               <div className="group-6">
-                <img className="check-circle-2" alt="Check circle" src="Circle.svg" />
+                <img src={tick} alt="tick" className="check-circle-2" />
                 <p className="unlimited-access-to">
                   Unlimited access to <br />
                   e-learning materials
                 </p>
               </div>
               <div className="group-7">
-                <img className="check-circle" alt="Check circle" src="Circle.svg" />
+                <img src={tick} alt="tick" className="check-circle" />
                 <div className="text-wrapper-7">Unlimited post in Forum</div>
               </div>
               <div className="group-8">
-                <img className="check-circle" alt="Check circle" src="Circle.svg" />
-                <p className="p">Unlimited access to AI- mental health chatbot</p>
+                <img src={tick} alt="tick" className="check-circle" />
+                <p className="p">Unlimited access to AI-mental health chatbot</p>
               </div>
               <div className="group-9">
-                <img className="check-circle" alt="Check circle" src="Circle.svg" />
-                <p className="text-wrapper-8">Unlimited access to AI-generated flashcard &amp; quiz</p>
+                <img src={tick} alt="tick" className="check-circle" />
+                <p className="text-wrapper-8">Unlimited access to AI-generated flashcard & quiz</p>
               </div>
               <div className="group-10">
-                <img className="check-circle" alt="Check circle" src="Circle.svg" />
+                <img src={tick} alt="tick" className="check-circle" />
                 <div className="text-wrapper-8">AI-generated revision table</div>
               </div>
             </div>
@@ -101,24 +103,24 @@ const PlansAndPricing = () => {
             </div>
           </button>
           <div className="group-11">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
+            <img src={tick} alt="tick" className="check-circle" />
             <div className="text-wrapper-4">Ad-Free Experience</div>
           </div>
           <div className="group-12">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
-            <p className="text-wrapper-4">Unlimited post &amp; post prioritization in Forum</p>
+            <img src={tick} alt="tick" className="check-circle" />
+            <p className="text-wrapper-4">Unlimited post & post prioritization in Forum</p>
           </div>
           <div className="group-13">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
+            <img src={tick} alt="tick" className="check-circle" />
             <p className="text-wrapper-4">Unlimited access to e-learning materials</p>
           </div>
           <div className="group-14">
-            <img className="check-circle" alt="Check circle" src="Circle.svg" />
-            <p className="text-wrapper-4">Unlimited access to AI- mental health chatbot</p>
+            <img src={tick} alt="tick" className="check-circle" />
+            <p className="text-wrapper-4">Unlimited access to AI-mental health chatbot</p>
           </div>
           <div className="group-15">
-            <img className="check-circle-3" alt="Check circle" src="Circle.svg" />
-            <p className="text-wrapper-4">Unlimited access to AI-generated flashcard &amp; quiz</p>
+            <img src={tick} alt="tick" className="check-circle-3" />
+            <p className="text-wrapper-4">Unlimited access to AI-generated flashcard & quiz</p>
           </div>
           <div className="text-wrapper-10">Individual</div>
         </div>
@@ -134,7 +136,7 @@ const PlansAndPricing = () => {
           <div className="text-wrapper-12">EduVibes</div>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 

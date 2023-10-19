@@ -1,4 +1,10 @@
-.PLANS-AND-PRICING {
+/* @media (max-width: 768px) { */
+
+  /* body{
+    min-width: 100vh;
+  } */
+ 
+ .PLANS-AND-PRICING {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -90,9 +96,9 @@
   }
   
   .PLANS-AND-PRICING .text-wrapper {
-    color: #ffffff;
+    color: black;
     font-family: "Poppins-Medium", Helvetica;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 500;
     left: 76px;
     letter-spacing: 0;
@@ -101,6 +107,7 @@
     text-align: center;
     top: 17px;
     width: 131px;
+    cursor: pointer;
   }
   
   .PLANS-AND-PRICING .frame {
@@ -177,7 +184,7 @@
   .PLANS-AND-PRICING .text-wrapper-2 {
     color: var(--white);
     font-family: "Poppins-Medium", Helvetica;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 500;
     left: 76px;
     letter-spacing: 0;
@@ -186,6 +193,7 @@
     text-align: center;
     top: 17px;
     width: 131px;
+    cursor: pointer;
   }
   
   .PLANS-AND-PRICING .price-wrapper {
@@ -243,7 +251,7 @@
     height: 20px;
     left: 0;
     position: absolute;
-    top: 3px;
+    top: 20px;
     width: 20px;
   }
   
@@ -258,6 +266,7 @@
     position: absolute;
     top: 0;
     width: 352px;
+    margin-top: 20px;
   }
   
   .PLANS-AND-PRICING .group-2 {
@@ -347,7 +356,7 @@
   
   .PLANS-AND-PRICING .img {
     height: 27px;
-    left: 232px;
+    left: 236px;
     position: absolute;
     top: 25px;
     width: 115px;
@@ -390,7 +399,7 @@
     height: 20px;
     left: 0;
     position: absolute;
-    top: 3px;
+    top: 15px;
     width: 17px;
   }
   
@@ -426,6 +435,7 @@
     position: absolute;
     top: 0;
     width: 352px;
+    margin-top: 20px;
   }
   
   .PLANS-AND-PRICING .group-8 {
@@ -468,6 +478,7 @@
     position: absolute;
     top: 0;
     width: 285px;
+    margin-top: 20px;
   }
   
   .PLANS-AND-PRICING .group-10 {
@@ -502,7 +513,7 @@
   .PLANS-AND-PRICING .text-wrapper-9 {
     color: var(--white);
     font-family: "Poppins-Medium", Helvetica;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 500;
     left: 69px;
     letter-spacing: 0;
@@ -510,6 +521,7 @@
     position: absolute;
     text-align: center;
     top: 11px;
+    cursor: pointer;
   }
   
   .PLANS-AND-PRICING .group-11 {
@@ -556,7 +568,7 @@
     height: 20px;
     left: 0;
     position: absolute;
-    top: 2px;
+    top: 17px;
     width: 20px;
   }
   
@@ -617,6 +629,7 @@
     gap: 14.19px;
     padding: 15.61px 25.55px;
     position: relative;
+    cursor: pointer;
   }
   
   .PLANS-AND-PRICING .text-wrapper-11 {
@@ -648,9 +661,13 @@
     font-weight: 700;
     letter-spacing: -0.64px;
     line-height: 32px;
-    margin-top: -1.42px;
+    margin-top: 10px;
     position: relative;
     white-space: nowrap;
     width: fit-content;
   }
+   
+
+
+  
   

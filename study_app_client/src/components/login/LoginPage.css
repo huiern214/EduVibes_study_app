@@ -1,6 +1,18 @@
 /* LoginPage.css */
 
 /* Common styles for both mobile and web */
+
+/* html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.login-page{
+  overflow: hidden;
+}
+
 .login-page {
   background-color: #e7f3ff;
   display: flex;
@@ -162,6 +174,24 @@
   font-size: 1.5rem; /* 24px converted to rem */
   padding: 0.3125rem; /* 5px converted to rem */
 }
+/* .image {
+  text-align: center; 
+} */
+
+.logo {
+  width: 160px;
+  height: 50px;
+}
+
+.login-image {
+  text-align: center; 
+}
+
+.login-image img {
+  width: 300px;
+  height: 300px;
+}
+
 
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {

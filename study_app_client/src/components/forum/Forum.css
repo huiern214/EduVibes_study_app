@@ -1,4 +1,6 @@
-/* Forum.css */
+body{
+  background-color: #F5F7FE;
+}
 .container {
     display: flex;
     justify-content: flex-end;
@@ -24,10 +26,10 @@
     margin-right: 10px;
   }
   
-  .search-icon,
   .camera-icon {
-    font-size: 24px;
+    font-size: 15px;
     cursor: pointer;
+    color: #999;
   }
   
   .topics-container {
@@ -64,138 +66,6 @@
     font-size: 16px;
   }
 
-
-  /* .forum-section {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .forum-post {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .profile-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 10px;
-  }
-  
-  .profile-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-  }
-  
-  .horizontal-line {
-    margin-top: 10px;
-    border-top: 1px solid #ccc;
-  }
-  
-  .forum-actions {
-    display: flex;
-    justify-content: space-between;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .forum-actions span {
-    cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  } */
-  
-
-   /* .forum-posts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post {
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-}
-
-.post-header {
-    display: flex;
-    align-items: center;
-}
-
-.profile-photo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.post-info {
-    margin-left: 10px;
-}
-
-.post-content {
-    margin-top: 10px;
-}
-
-.post-bar {
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.post-actions {
-    display: flex;
-    justify-content: space-between;
-}
-
-.post-action {
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.post-action:first-child {
-    margin-right: 5px;
-}
-
-.post-action:hover {
-    background-color: #0056b3;
-} */
-
 .forum-post {
   display: inline-table;
   width: 400px;
@@ -222,15 +92,19 @@
 
 .text-box {
   flex: 1;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin-left: 20px;
+  width: 300px;
+  border-radius: 30px;
 }
 
 .action-buttons {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  margin-left: 70px;
 }
 
 .action-buttons span {
@@ -245,6 +119,10 @@
 
 .profile-picture img{
   width: 40px;
+}
+
+.middle{
+  background-color: white;
 }
 
 .middle h2{
@@ -341,6 +219,7 @@ font-size: 12px;
   display: flex;
   align-items: center;
   margin: 10px 0;
+  justify-content: space-between;
 }
 
 .profile-icon {
@@ -351,10 +230,9 @@ font-size: 12px;
 .comment-input {
   display: flex;
   align-items: center;
-}
-
-.comment-input span {
-  margin-right: 10px; /* Adjust spacing */
+  position: relative;
+  width: 500px;
+  
 }
 
 .comment-input input {
@@ -365,29 +243,124 @@ font-size: 12px;
   font-size: 16px;
   background-color: #f0f0f0;
   height: 40px;
+  position: relative; /* Set the input field to relative positioning */
 }
 
-.user-info {
-  background-color: #f0f0f0;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-right: 10px;
-  width: 50px;
+.comment-input .accepted {
+  position: absolute;
+  top: 0;
+  right: 55px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: green;
 }
+
+.comment-input .accepted span {
+  margin-right: 10px;
+}
+
+.comment-input .user-info {
+  position: absolute;
+  left: 6px;
+  top: 20%;
+  transform: translateY(-50%);
+  font-size: 13px;
+}
+
 
 .accepted {
-  background-color: #00cc00; /* Background color for "Accepted" */
-  color: #fff; /* Text color for "Accepted" */
+  color: black; 
   padding: 5px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 20%; /* Adjust as needed */
 }
 
 .accepted span {
   margin-right: 5px;
   /* Add more styling as needed */
 }
+
+.comment-input .input-field {
+  background-color: #f0f0f0;
+  padding: 5px 20px; 
+  border-radius: 20px;
+  margin-right: 10px;
+  width: calc(100% - 50px); 
+  font-size: 14px; 
+  color: #888; 
+}
+
+
+
+.coin-icon img{
+  width: 25px;
+  margin-right: -380px;
+  margin-bottom: 40px;
+}
+
+.notification-box {
+  margin-left: auto; /* Push the box to the right end of the comment bar */
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.thumb-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: -20px;
+  color: #246BD6;
+}
+
+.notification-count {
+  font-weight: bold;
+}
+
+.thumb-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* Add other styles as needed */
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 5px; /* Adjust the margin as needed */
+  /* Add other icon styles as needed */
+}
+
+.thumb-box {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 20px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.right{
+  position: relative;
+  top: 0;
+  right: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+
 
