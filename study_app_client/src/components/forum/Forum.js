@@ -13,9 +13,9 @@ import coin from './coin.png';
 import { FaHeart, FaComment, FaShare, FaUser, FaCheckCircle, FaThumbsUp, FaQuestionCircle, FaPen, FaCamera} from 'react-icons/fa';
 
 const YourComponent = () => {
-  // Define functions to handle clicks
+
   const handleAskClick = () => {
-    // Add your Ask click logic here
+
     alert("Ask clicked");
   }
 
@@ -157,7 +157,7 @@ const YourComponent = () => {
   </div>
   <div className="accepted">
   <span>Accepted</span>
-  {/* Assuming you're using Font Awesome for the tick icon */}
+
   <FaCheckCircle />
 </div>
 {/* type here */}
@@ -169,7 +169,6 @@ const YourComponent = () => {
 </div>
 </div>
       </div>
-      {/* Add more posts here */}
     </div>
     </div>
     </div>
