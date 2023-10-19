@@ -7,6 +7,26 @@ import mascot from './Mascot.png';
 import './Frontpage.css';
 
 const FrontPage = () => {
+
+  useEffect(() => {
+    // Set the viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Adjust the viewport settings
+    // For example, set the minimum scale to 1 to prevent user scaling
+    const minimumScale = Math.min(
+      viewportWidth / window.screen.width,
+      viewportHeight / window.screen.height
+    );
+
+    // Apply viewport settings
+    document.querySelector('meta[name="viewport"]').setAttribute(
+      'content',
+      `width=device-width, initial-scale=${minimumScale}, maximum-scale=1, user-scalable=no`
+    );
+  }, []);
+  
   return (
     <div className="front-page">
       <div className="div">

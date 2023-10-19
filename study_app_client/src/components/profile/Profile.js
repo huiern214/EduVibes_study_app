@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig';
 import './Profile.css';
 import { useSelector } from 'react-redux';
+import profile from './profile.png';
 
 function Profile() {
   const [profileData, setProfileData] = useState(null);
@@ -36,7 +37,9 @@ function Profile() {
         <h2 className="profile-title">User Profile</h2>
       </div>
       <div className="profile-content">
+      <img src={profile} alt="profile" />
         <table className="profile-table">
+          
           <tbody>
             <tr>
               <td><strong>User ID:</strong></td>
@@ -51,12 +54,18 @@ function Profile() {
               {/* <td>{profileData.email}</td> */}
             </tr>
             <tr>
-              <td><strong>Coins:</strong></td>
+              <td><strong>Coins:</strong>
+              
+              </td>
               {/* <td>{profileData.funds ? profileData.funds.toFixed(2) : '0.00'}</td> */}
             </tr>
+            
           </tbody>
+          
         </table>
+        
       </div>
+
     </div>
   );
 }
