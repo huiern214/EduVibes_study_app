@@ -37,9 +37,9 @@ body{
     padding-right: 30px;
   }
   
-  h2 {
+  .topics-container h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 110px
   }
   
@@ -50,7 +50,7 @@ body{
     margin-bottom: 10px;
   }
   
-  img {
+  .topic img {
     width: 60px;
     height: auto;
     border-radius: 5px;
@@ -62,6 +62,7 @@ body{
     text-decoration:underline; /* Remove underline */
     color: blue; /* Set the text color */
   }
+
   p {
     font-size: 16px;
   }
