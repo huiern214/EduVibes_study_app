@@ -1,6 +1,7 @@
 body{
   background-color: #F5F7FE;
 }
+
 .container {
     display: flex;
     justify-content: flex-end;
@@ -66,15 +67,16 @@ body{
     font-size: 16px;
   }
 
+
+
 .forum-post {
-  display: inline-table;
+  display: inline-block;
   width: 400px;
   margin: 20px;
   padding: 15px;
   border: 1px solid #ddd;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  margin-left: -70px;
 }
 
 .profile-picture {
@@ -120,6 +122,8 @@ body{
 .profile-picture img{
   width: 40px;
 }
+
+
 
 .middle{
   background-color: white;

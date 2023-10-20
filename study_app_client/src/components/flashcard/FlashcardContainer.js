@@ -9,8 +9,10 @@ const flashcards = [
   // Add more flashcards as needed
 ];
 
+const topic = "Biology Chapter 1"; // Define the topic
+
 const FlashcardContainer = () => {
-  const[currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
   const goToNextCard = () => {
     if (currentCardIndex < flashcards.length - 1) {
@@ -24,8 +26,17 @@ const FlashcardContainer = () => {
     }
   };
 
+  const handleSave = () => {
+    // Add your save logic here
+    alert('Saved!'); // You can replace this with your actual save logic
+  };
+
   return (
     <div className="flashcard-container">
+      <button className="save-button" onClick={handleSave}>
+        Save
+      </button>
+      <h2 className="topic">{topic}</h2>
       <Flashcard front={flashcards[currentCardIndex].front} back={flashcards[currentCardIndex].back} />
 
       <div className="flashcard-navigation">
