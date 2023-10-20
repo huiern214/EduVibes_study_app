@@ -1,15 +1,38 @@
 import React, {useState} from "react";
-
+import image from './image.png';
+import iconEdit from './icon_edit.png';
+import book from './book.png';
+import logo from './Logo.png';
+import mascot from './Mascot.png';
 import './Frontpage.css';
 import Line0 from "./Line 0.svg";
 import Line1 from "./Line 1.svg";
 import Logo from "./Logo.png";
 import Mascot from "./Mascot.png";
-import Vector from "./Vector.svg";
-import Writing from "./Writing.svg";
+
 
 
 const FrontPage = () => {
+
+  useEffect(() => {
+    // Set the viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Adjust the viewport settings
+    // For example, set the minimum scale to 1 to prevent user scaling
+    const minimumScale = Math.min(
+      viewportWidth / window.screen.width,
+      viewportHeight / window.screen.height
+    );
+
+    // Apply viewport settings
+    document.querySelector('meta[name="viewport"]').setAttribute(
+      'content',
+      `width=device-width, initial-scale=${minimumScale}, maximum-scale=1, user-scalable=no`
+    );
+  }, []);
+  
   return (
       <div className="front-page">
         <div className="div">
@@ -82,6 +105,29 @@ const FrontPage = () => {
             </div>
           </div>
         </div>
+        <img className="vector" src={image} alt="Vector" />
+        <div className="text-wrapper-3">E- Learning Materials</div>
+        <div className="text-wrapper-4">Active Users</div>
+        <div className="text-wrapper-5">E-LEARNING PLATFORM</div>
+        <div className="frame-3">
+          <div className="frame-4">
+            <div className="text-wrapper-6">EduVibes</div>
+          </div>
+          <div className="frame-2">
+            <div className="text-wrapper-7">Login →</div>
+            <div className="frame-5">
+              <div className="text-wrapper-8">Sign Up</div>
+            </div>
+          </div>
+        </div>
+        <img className="vector-2" src={book} alt="Book" />
+      <img className="icon-edit" src={iconEdit} alt="Icon edit" />
+      <div className="text-wrapper-9">700 +</div>
+      <div className="text-wrapper-10">575 K +</div>
+      <p className="AI-powered-quiz">AI-Powered Quiz & Flashcard Generator & HealGPT</p>
+      <div className="text-wrapper-11">NO. 1</div>
+      <img className="eduvibes-logo" src={logo} alt="Eduvibes logo" />
+      <img className="untitled-design" src={mascot} alt="Untitled design" />
       </div>
     );
 };

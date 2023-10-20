@@ -1,4 +1,6 @@
-
+body{
+  background-color: #F5F7FE;
+}
 .container {
     display: flex;
     justify-content: flex-end;
@@ -117,6 +119,10 @@
 
 .profile-picture img{
   width: 40px;
+}
+
+.middle{
+  background-color: white;
 }
 
 .middle h2{
