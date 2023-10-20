@@ -1,5 +1,7 @@
 import React from "react";
 import "./Plans.css";
+import Rectangle from "./Rectangle.svg";
+import Circle from "./Circle.svg";
 
 const PlansAndPricing = () => {
   return (
@@ -67,11 +69,15 @@ const PlansAndPricing = () => {
                   <div className="element-3">RM 5.90</div>
                 </div>
               </div>
-              <img className="img" alt="Rectangle" src="Rectangle.svg" />
+              <div className="Rectangle">
+                <img src={Rectangle} alt="Rectangle" />
+              </div>
               <div className="text-wrapper-5">/month</div>
               <div className="text-wrapper-6">MOST POPULAR</div>
               <div className="group-6">
-                <img className="check-circle-2" alt="Check circle" src="Circle.svg" />
+                <div className="check-circle-2">
+                <img src={Circle} alt="Check circle" />
+                </div>
                 <p className="unlimited-access-to">
                   Unlimited access to <br />
                   e-learning materials

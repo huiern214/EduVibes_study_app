@@ -9,8 +9,10 @@ const flashcards = [
   // Add more flashcards as needed
 ];
 
+const topic = "Biology Chapter 1"; // Define the topic
+
 const FlashcardContainer = () => {
-  const[currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
   const goToNextCard = () => {
     if (currentCardIndex < flashcards.length - 1) {
@@ -26,6 +28,7 @@ const FlashcardContainer = () => {
 
   return (
     <div className="flashcard-container">
+      <h2 className="topic">{topic}</h2>
       <Flashcard front={flashcards[currentCardIndex].front} back={flashcards[currentCardIndex].back} />
 
       <div className="flashcard-navigation">
