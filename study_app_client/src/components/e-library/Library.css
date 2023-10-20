@@ -4,6 +4,7 @@
 .search-container {
     padding-left: 43%;
     padding-top: 29px;
+  
   }
   
   .search-input {
@@ -24,7 +25,7 @@
   .search-button {
     max-height: 29px;
     border-radius: 4px; /* Set the border radius for rounded corners */
-    padding: 10px; /* Set the padding for the button */
+    padding: 5px 20px;
     margin: 2px;
     font-size: 14px; /* Set the font size */
     border: none; /* Remove the default button border */
@@ -82,7 +83,8 @@
   /* Style for e-book card images */
   .card-img-top {
     height: 200px; /* Adjust the image height as needed */
-    object-fit: cover;
+    max-width: 150px;
+    margin-left: 70px;
   }
   
   /* Style for e-book card titles */
@@ -122,3 +124,26 @@
     background-color: #545b62;
   }
   
+  .download-section {
+    display: inline-block;
+    padding: 5px 15px; /* Adjust padding as needed */
+    cursor: pointer;
+    background-color: #fff; /* Background color for the rectangle */
+    border-radius: 30px;
+    text-align: center; 
+  }
+  
+  .download-section .download-text {
+    color: #000; /* Set text color to black */
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    background-color: #DEE9F6;
+  }
+
+  .inside{
+    margin-top: -5px;
+  }
