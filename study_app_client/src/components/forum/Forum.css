@@ -2,11 +2,10 @@ body{
   background-color: #F5F7FE;
 }
 .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 20px;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
   }
   
   .search-bar {
@@ -74,7 +73,8 @@ body{
   border: 1px solid #ddd;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  margin-left: -70px;
+  margin-left: 180px;
+  background-color: white;
 }
 
 .profile-picture {
@@ -98,6 +98,7 @@ body{
   margin-left: 20px;
   width: 300px;
   border-radius: 30px;
+  background-color: #F2F3F5;
 }
 
 .action-buttons {
@@ -122,11 +123,13 @@ body{
 }
 
 .middle{
-  background-color: white;
+  flex: 3;
+  padding: 20px;
+  order: 1;
 }
 
 .middle h2{
-  margin-left: -300px;
+  margin-left: -80px;
 }
 
 /* Style for the post header */
@@ -186,7 +189,8 @@ padding: 15px;
 border: 1px solid #ddd;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 border-radius: 30px;
-margin-left: 370px;
+margin-left: 290px;
+background-color: white;
 }
 
 .question p{
@@ -354,12 +358,9 @@ font-size: 12px;
 }
 
 .right{
-  position: relative;
-  top: 0;
-  right: 35px;
-  display: flex;
-  align-items: center;
-  font-size: 10px;
+  flex: 1;
+  padding: 20px;
+  order: 2;
 }
 
 
