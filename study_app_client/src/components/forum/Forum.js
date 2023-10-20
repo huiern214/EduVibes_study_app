@@ -20,6 +20,7 @@ const YourComponent = () => {
   }
 
   const handlePostClick = () => {
+    // Add your Post click logic here
     alert("Post clicked");
   }
 
@@ -30,18 +31,15 @@ const YourComponent = () => {
   };
 
   return (
-    <div>
+
       <div className="container">
-      <div className="right">
+            <div className="right">
         <div className="search-bar">
-
           <input type="text" placeholder="Search..." />
-
-          {/* <div className="right"> */}
           <FaCamera className="camera-icon" />
-          {/* </div> */}
-        </div>
+          </div>
 
+          
 
         <div className="topics-container">
           <h2>Topics</h2>
@@ -70,8 +68,7 @@ const YourComponent = () => {
           <a href="/mathematics">Mathematics</a>
         </div>
         </div>
-      {/* </div> */}
-      </div>
+        </div>
 
       <div className="middle">
         <h2>Forum</h2>
@@ -99,6 +96,7 @@ const YourComponent = () => {
   </div>
 </div>
 </div>
+
         
       
 
@@ -173,7 +171,7 @@ const YourComponent = () => {
     </div>
     </div>
     </div>
-    </div>
+
   );
 };
 

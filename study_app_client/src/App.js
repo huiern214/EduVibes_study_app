@@ -9,6 +9,7 @@ import Flashcard from './components/flashcard/FlashcardContainer';
 import Frotpage from "./components/frontpage/Frontpage";
 import PlansAndPricing from './components/plans&price/Plans';
 import HealGPT from './components/healgpt/HealGPT';
+import Timetable from './components/flashcard/Timetable';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/frontpage" element={<Frotpage />} />
             <Route path="/plansprice" element={<PlansAndPricing />} />
+            <Route path="/timetable" element={<Timetable />} />
             <Route path="/profile" element={<Profile />}></Route>
             <Route path="/flashcards" element={<Flashcard />}></Route>
             <Route path="/forum" element={<Forum />}></Route>

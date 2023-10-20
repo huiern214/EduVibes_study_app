@@ -1,0 +1,75 @@
+.timetable-container {
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 40px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timetable-title {
+    color: #242730;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 42px */
+}
+
+.back-button {
+    background-color: #f13a11;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.today {
+    margin-top: 10px;
+    align-items: left;
+    text-align: left;
+}
+
+.today-text {
+    color: #242730;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: 70px;
+}
+
+.card {
+    width: 200px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    max-width: 150px;
+    margin-left: 70px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
