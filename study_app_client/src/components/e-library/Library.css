@@ -1,10 +1,9 @@
-/* ELibraryPage.css */
+
 
 /* Style for the search bar */
 .search-container {
     padding-left: 43%;
     padding-top: 29px;
-  
   }
   
   .search-input {
@@ -28,8 +27,8 @@
     padding: 5px 20px;
     margin: 2px;
     font-size: 14px; /* Set the font size */
-    border: none; /* Remove the default button border */
-    cursor: pointer; /* Set the cursor to indicate it's clickable */
+    border: none;
+    cursor: pointer; 
     display: inline-block;
     text-align: center;
     vertical-align:middle;
@@ -43,20 +42,7 @@
   }
   
   
-/* .search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  } */
-  
-  /* Style for the buttons */
-  /* .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  } */
-  
+
   .ebook-list {
     /* display: flex;
     flex-wrap: wrap;
