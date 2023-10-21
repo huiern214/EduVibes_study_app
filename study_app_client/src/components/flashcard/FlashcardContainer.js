@@ -10,7 +10,7 @@ const flashcards = [
   // Add more flashcards as needed
 ];
 
-const topic = "Biology Chapter 1"; // Define the topic
+const topic = "Biology Chapter 3"; // Define the topic
 
 const FlashcardContainer = () => {
 
@@ -34,7 +34,7 @@ const FlashcardContainer = () => {
   return (
     <div className="flashcard-container">
       <div>
-        <Link to="/timetable" className="save-button">
+        <Link to="/flashcards" className="save-button">
           Save
         </Link>
       </div>

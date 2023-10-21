@@ -51,11 +51,11 @@ const Timetable = () => {
                 <div className="title-container">
                     <p className="timetable-title">Revision Timetable</p>
                 </div>
-                <div className="button-container">
+                {/* <div className="button-container">
                     <Link to="/flashcards" className="back-button">
                     Back
                     </Link>
-                </div>
+                </div> */}
             </div>
             <div className="today">
                 <p className="today-text">Today's learning</p>
@@ -93,7 +93,7 @@ const Timetable = () => {
                     {tableData.map((row, index) => (
                         <tr key={index}>
                             <td>{row.day}</td>
-                            <td>{row.content}</td>
+                            <td><a href='/biologyflashcard'>{row.content}</a></td>
                             <td>{row['1 day']}</td>
                             <td>{row['2 days']}</td>
                             <td>{row['3 days']}</td>
