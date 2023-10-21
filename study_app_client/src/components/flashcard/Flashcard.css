@@ -1,3 +1,5 @@
+
+
 .flashcard-container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -49,14 +51,23 @@
   transform: rotateY(180deg);
 }
 
+.topic {
+  font-size: 1.5rem;
+  color: #3d80c7;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 10px;
+  margin-bottom: 10px; /* Add margin to separate it from the flashcards */
+}
+
 .flashcard-navigation {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 800px;
-  padding: 20px 0; /* Add padding to create space between the flashcard and navigation */
-  border-top: 1px solid #ccc; /* Add a separator between the flashcard and navigation */
+  margin-top: 10px; /* Add margin to the top to move the navigation lower */
 }
+
 
 .flashcard-navigation button {
   background-color: #3d80c7;
