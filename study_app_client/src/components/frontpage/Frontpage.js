@@ -59,8 +59,8 @@ const FrontPage = () => {
         </div>
         <div className="vector-2" ><img src={Book}alt="Vector"/></div>
         <div className="icon-edit"><img src ={Writing} alt="Icon edit"/></div> 
-        <div className="text-wrapper-9">700 +</div>
-        <div className="text-wrapper-10">575 K +</div>
+        <div className="text-wrapper-9">1000 +</div>
+        <div className="text-wrapper-10">100 K +</div>
         <p className="AI-powered-quiz">AI-Powered Quiz &amp; Flashcard Generator &amp; HealGPT</p>
         <div className="text-wrapper-11">NO. 1</div>
         <div className="eduvibes-logo"><img src ={Logo} alt="Eduvibes logo" /></div> 

@@ -5,26 +5,15 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
+  max-width: 100%; /* Add this line */
 }
 
-/* .front-page {
-  max-width: 100%;
-  overflow: hidden;
-  padding: 20px; 
-  box-sizing: border-box; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-} */
+
 
 .front-page .div {
   background-color: #f5f7fe;
-  height: 1024px;
-  position: relative;
-  width: 1440px;
+  height: 100%;
+  width: 100%;
 }
 
 .front-page .flexcontainer {
@@ -47,7 +36,6 @@
   font-weight: 400;
   letter-spacing: -2.93px;
   line-height: 50.2px;
-  position: relative;
 }
 
 .front-page .text-wrapper {
