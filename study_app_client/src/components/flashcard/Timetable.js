@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
 import './Timetable.css';
-import { Button } from 'react-bootstrap';
 import Sejarah from './Sejarah.png';
 import Biology from './Biology.png';
 import Addmath from './Addmath.png';
+import {Link} from 'react-router-dom';
 
 
 const Timetable = () => {
     const cardData = [
         {
             id: 1,
-            title: 'Card 1',
+            title: 'Sejarah',
             imageUrl: Sejarah,
         },
         {
             id: 2,
-            title: 'Card 2',
+            title: 'Biology',
             imageUrl: Biology,
         },
         {
             id: 3,
-            title: 'Card 3',
+            title: 'Addmath',
             imageUrl: Addmath,
         },
         // Add more cards as needed
@@ -52,7 +52,9 @@ const Timetable = () => {
                     <p className="timetable-title">Revision Timetable</p>
                 </div>
                 <div className="button-container">
-                    <button className="back-button" onClick={handleBack}>Back</button>
+                    <Link to="/flashcards" className="back-button">
+                    Back
+                    </Link>
                 </div>
             </div>
             <div className="today">
