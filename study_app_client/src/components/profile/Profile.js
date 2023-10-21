@@ -60,14 +60,9 @@ function Profile() {
               <tbody>
                 <tr>
                   <td><strong>User ID:</strong></td>
-                  <td>
-                    <input
-                      type="text"
-                      value={editedUserData.userId}
-                      onChange={(e) => handleInputChange('userId', e.target.value)}
-                      style={{ width: '200px' }}
-                    />
-                  </td>
+                  
+                  <td>{profileData.userId}</td>
+                  
                 </tr>
                 <tr>
                   <td><strong>Username:</strong></td>
