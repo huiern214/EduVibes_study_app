@@ -3,11 +3,10 @@ body{
 }
 
 .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 20px;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
   }
   
   .search-bar {
@@ -38,9 +37,9 @@ body{
     padding-right: 30px;
   }
   
-  h2 {
+  .topics-container h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 110px
   }
   
@@ -51,7 +50,7 @@ body{
     margin-bottom: 10px;
   }
   
-  img {
+  .topic img {
     width: 60px;
     height: auto;
     border-radius: 5px;
@@ -63,6 +62,7 @@ body{
     text-decoration:underline; /* Remove underline */
     color: blue; /* Set the text color */
   }
+
   p {
     font-size: 16px;
   }
@@ -77,6 +77,8 @@ body{
   border: 1px solid #ddd;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
+  margin-left: 180px;
+  background-color: white;
 }
 
 .profile-picture {
@@ -100,6 +102,7 @@ body{
   margin-left: 20px;
   width: 300px;
   border-radius: 30px;
+  background-color: #F2F3F5;
 }
 
 .action-buttons {
@@ -126,11 +129,13 @@ body{
 
 
 .middle{
-  background-color: white;
+  flex: 3;
+  padding: 20px;
+  order: 1;
 }
 
 .middle h2{
-  margin-left: -300px;
+  margin-left: -80px;
 }
 
 /* Style for the post header */
@@ -190,7 +195,8 @@ padding: 15px;
 border: 1px solid #ddd;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 border-radius: 30px;
-margin-left: 370px;
+margin-left: 290px;
+background-color: white;
 }
 
 .question p{
@@ -358,12 +364,9 @@ font-size: 12px;
 }
 
 .right{
-  position: relative;
-  top: 0;
-  right: 35px;
-  display: flex;
-  align-items: center;
-  font-size: 10px;
+  flex: 1;
+  padding: 20px;
+  order: 2;
 }
 
 
