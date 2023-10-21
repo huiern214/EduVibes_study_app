@@ -29,6 +29,7 @@ function App() {
             <Route path="/forum" element={<Forum />}></Route>
             <Route path="/library" element={<Library />}></Route>
             <Route path="/healgpt" element={<HealGPT />}></Route>
+            <Route path="/library" element={<Library />}></Route>
             <Route path="*" element={<h1>Not Found</h1>}></Route>
 
           </Route>
