@@ -1,6 +1,6 @@
 .timetable-container {
     width: 1000px;
-    margin-left: 300px;
+    margin-left: 280px;
     margin-top: 40px;
 
 }
@@ -30,6 +30,7 @@
     border-radius: 5px;
     outline: none;
     transition: background-color 0.3s;
+    margin-right: 30px;
 }
 
 .today {
