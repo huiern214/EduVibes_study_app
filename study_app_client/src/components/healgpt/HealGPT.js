@@ -28,7 +28,11 @@ class HealGPT extends Component {
 
       // Simulate a response from the chatbot (you can replace this with actual API calls)
       setTimeout(() => {
-        messages.push({ text: 'Hello ! How can I assist you today ?', sender: 'bot', avatar: botAvatar });
+        if (userInput.includes('stress')) {
+          messages.push({ text: 'Kindly answer these 10 short questions to help us identify your stress level.\nAre you having trouble sleeping due to worries about school?\n(A) Rarely\n(B) Occasionally\n(C) Often\n(D) Always', sender: 'bot', avatar: botAvatar });
+        } else {
+          messages.push({ text: 'Hello ! How can I assist you today ?', sender: 'bot', avatar: botAvatar });
+        }
         this.setState({ messages });
       }, 1000);
     }
