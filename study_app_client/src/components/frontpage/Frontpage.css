@@ -3,8 +3,22 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 70%;
+  width: 100%;
+  min-height: 100vh;
 }
+
+/* .front-page {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+} */
 
 .front-page .div {
   background-color: #f5f7fe;
@@ -43,6 +57,7 @@
   font-weight: 400;
   letter-spacing: -2.93px;
   line-height: 10px;
+
 }
 
 .front-page .gain-new-knwoledge {
@@ -99,6 +114,7 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+  cursor: pointer;
 }
 
 .front-page .vector {
@@ -302,10 +318,10 @@
 .front-page .eduvibes-logo {
   height: 62px;
   left: 75px;
-  object-fit: cover;
   position: absolute;
-  top: 68px;
-  width: 55px;
+  top: 64px;
+  width: 50px;
+  height: 55px;
 }
 
 .front-page .untitled-design {
@@ -316,3 +332,4 @@
   top: 189px;
   width: 610px;
 }
+

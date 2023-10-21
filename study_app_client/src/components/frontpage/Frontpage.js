@@ -5,6 +5,7 @@ import Logo from './Logo.png';
 import Book from './book.png';
 import Thunder from './image.png';
 import Writing from './icon_edit.png';
+import { Link } from 'react-router-dom';
 
 const FrontPage = () => {
   return (
@@ -48,7 +49,9 @@ const FrontPage = () => {
             <div className="text-wrapper-6">EduVibes</div>
           </div>
           <div className="frame-2">
-            <div className="text-wrapper-7">Login →</div>
+            <div className="text-wrapper-7">
+              <Link to={`/login`} className="link">Login →</Link>
+            </div>
             <div className="frame-5">
               <div className="text-wrapper-8">Sign Up</div>
             </div>
