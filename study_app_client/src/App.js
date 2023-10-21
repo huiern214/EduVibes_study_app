@@ -10,6 +10,7 @@ import Frotpage from "./components/frontpage/Frontpage";
 import PlansAndPricing from './components/plans&price/Plans';
 import HealGPT from './components/healgpt/HealGPT';
 import Timetable from './components/flashcard/Timetable';
+import Library from './components/e-library/Library';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/profile" element={<Profile />}></Route>
             <Route path="/flashcards" element={<Flashcard />}></Route>
             <Route path="/forum" element={<Forum />}></Route>
+            <Route path="/library" element={<Library />}></Route>
             <Route path="/healgpt" element={<HealGPT />}></Route>
             <Route path="*" element={<h1>Not Found</h1>}></Route>
 

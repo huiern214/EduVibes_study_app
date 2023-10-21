@@ -28,7 +28,7 @@ const FlashcardContainer = () => {
 
   const handleSave = () => {
     // Add your save logic here
-    alert('Saved!'); // You can replace this with your actual save logic
+    alert('Progress Saved!'); // You can replace this with your actual save logic
   };
 
   return (
