@@ -3,70 +3,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  min-height: 100vh;
+  max-width: 100%; /* Add this line */
 }
-
-/* .front-page {
-  max-width: 100%;
-  overflow: hidden;
-  padding: 20px; 
-  box-sizing: border-box; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-} */
 
 .front-page .div {
   background-color: #f5f7fe;
-  height: 1024px;
-  position: relative;
-  width: 1440px;
-}
-
-.front-page .vector {
-  height: 57px;
-  left: 427px;
-  position: absolute;
-  top: 857px;
-  width: 1px;
-}
-
-.front-page .img {
-  height: 57px;
-  left: 819px;
-  position: absolute;
-  top: 857px;
-  width: 1px;
-}
-
-.front-page .eduvibes-logo {
-  height: 62px;
-  left: 75px;
-  object-fit: cover;
-  position: absolute;
-  top: 68px;
-  width: 55px;
-}
-
-.front-page .untitled-design {
-  height: 562px;
-  left: 756px;
-  object-fit: cover;
-  position: absolute;
-  top: 189px;
-  width: 610px;
-}
-
-.front-page .big-quote {
-  height: 253px;
-  left: 95px;
-  position: absolute;
-  top: 283px;
-  width: 638px;
+  height: 100%;
+  width: 100%;
 }
 
 .front-page .flexcontainer {
@@ -75,8 +18,9 @@
   flex-direction: column;
   gap: 17px;
   height: 253px;
-  position: relative;
-  top: -1px;
+  left: 95px;
+  position: absolute;
+  top: 282px;
   width: 638px;
 }
 
@@ -84,11 +28,10 @@
   align-self: stretch;
   color: #000000;
   font-family: "Days One-Regular", Helvetica;
-  font-size: 73.2px;
+  font-size: 10.2px;
   font-weight: 400;
   letter-spacing: -2.93px;
-  line-height: 73.2px;
-  position: relative;
+  line-height: 50.2px;
 }
 
 .front-page .text-wrapper {
@@ -106,15 +49,15 @@
   font-family: "Inter-SemiBold", Helvetica;
   font-size: 22.7px;
   font-weight: 600;
-  left: 0;
+  left: 97px;
   letter-spacing: -0.91px;
   line-height: 31.8px;
   position: absolute;
-  top: -1px;
+  top: 550px;
   width: 462px;
 }
 
-.front-page .learn-more {
+.front-page .frame {
   align-items: flex-start;
   display: inline-flex;
   flex-direction: column;
@@ -124,7 +67,7 @@
   top: 664px;
 }
 
-.front-page .frame {
+.front-page .frame-2 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -158,28 +101,62 @@
   cursor: pointer;
 }
 
-.front-page .title {
-  height: 24px;
-  left: 97px;
+.front-page .vector {
+  height: 38px;
+  left: 511px;
   position: absolute;
-  top: 189px;
-  width: 365px;
+  top: 855px;
+  width: 39px;
 }
 
 .front-page .text-wrapper-3 {
+  color: #585858;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 19.9px;
+  font-weight: 600;
+  left: 144px;
+  letter-spacing: -0.79px;
+  line-height: 27.8px;
+  position: absolute;
+  top: 906px;
+  white-space: nowrap;
+}
+
+.front-page .img {
+  height: 57px;
+  left: 427px;
+  position: absolute;
+  top: 857px;
+  width: 1px;
+}
+
+.front-page .text-wrapper-4 {
+  color: #585858;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 19.9px;
+  font-weight: 600;
+  left: 575px;
+  letter-spacing: -0.79px;
+  line-height: 27.8px;
+  position: absolute;
+  top: 906px;
+  white-space: nowrap;
+}
+
+.front-page .text-wrapper-5 {
   color: #4683bb;
   font-family: "Montserrat-Bold", Helvetica;
   font-size: 24px;
   font-weight: 700;
-  left: 0;
+  left: 97px;
   letter-spacing: 3.36px;
   line-height: 24px;
   position: absolute;
-  top: -1px;
+  top: 188px;
   white-space: nowrap;
 }
 
-.front-page .bar {
+.front-page .frame-3 {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -189,7 +166,7 @@
   width: 1226px;
 }
 
-.front-page .frame-2 {
+.front-page .frame-4 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -197,7 +174,7 @@
   position: relative;
 }
 
-.front-page .text-wrapper-4 {
+.front-page .text-wrapper-6 {
   color: #000000;
   font-family: "Poppins-Bold", Helvetica;
   font-size: 32px;
@@ -210,7 +187,7 @@
   width: fit-content;
 }
 
-.front-page .text-wrapper-5 {
+.front-page .text-wrapper-7 {
   color: #000000;
   font-family: "Montserrat-Bold", Helvetica;
   font-size: 19.9px;
@@ -222,7 +199,7 @@
   width: fit-content;
 }
 
-.front-page .frame-3 {
+.front-page .frame-5 {
   align-items: flex-start;
   background-color: #5e7bd5;
   border-radius: 17.03px;
@@ -233,7 +210,7 @@
   position: relative;
 }
 
-.front-page .text-wrapper-6 {
+.front-page .text-wrapper-8 {
   color: #ffffff;
   font-family: "Montserrat-Bold", Helvetica;
   font-size: 19.9px;
@@ -246,80 +223,32 @@
   width: fit-content;
 }
 
-.front-page .learning-material {
-  height: 101px;
-  left: 79px;
-  position: absolute;
-  top: 834px;
-  width: 266px;
-}
-
-.front-page .group {
-  height: 101px;
-  position: relative;
-  width: 270px;
-}
-
-.front-page .text-wrapper-7 {
-  color: #585858;
-  font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 19.9px;
-  font-weight: 600;
-  left: 65px;
-  letter-spacing: -0.79px;
-  line-height: 27.8px;
-  position: absolute;
-  top: 73px;
-  white-space: nowrap;
-}
-
 .front-page .vector-2 {
   height: 32px;
-  left: -1px;
+  left: 78px;
   position: absolute;
-  top: 20px;
+  top: 854px;
   width: 37px;
 }
 
-.front-page .text-wrapper-8 {
+.front-page .icon-edit {
+  height: 39px;
+  left: 898px;
+  position: absolute;
+  top: 856px;
+  width: 40px;
+}
+
+.front-page .text-wrapper-9 {
   color: #000000;
   font-family: "Montserrat-ExtraBold", Helvetica;
   font-size: 48px;
   font-weight: 800;
-  left: 65px;
+  left: 144px;
   letter-spacing: -1.92px;
   line-height: 67.2px;
   position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.front-page .active-users {
-  height: 95px;
-  left: 511px;
-  position: absolute;
-  top: 840px;
-  width: 232px;
-}
-
-.front-page .vector-3 {
-  height: 38px;
-  left: 0;
-  position: absolute;
-  top: 15px;
-  width: 39px;
-}
-
-.front-page .text-wrapper-9 {
-  color: #585858;
-  font-family: "Montserrat-SemiBold", Helvetica;
-  font-size: 19.9px;
-  font-weight: 600;
-  left: 64px;
-  letter-spacing: -0.79px;
-  line-height: 27.8px;
-  position: absolute;
-  top: 66px;
+  top: 833px;
   white-space: nowrap;
 }
 
@@ -328,34 +257,20 @@
   font-family: "Montserrat-ExtraBold", Helvetica;
   font-size: 48px;
   font-weight: 800;
-  left: 64px;
+  left: 575px;
   letter-spacing: -1.92px;
   line-height: 67.2px;
   position: absolute;
-  top: -1px;
+  top: 839px;
   white-space: nowrap;
 }
 
-.front-page .quiz {
-  height: 123px;
-  left: 898px;
+.front-page .vector-3 {
+  height: 57px;
+  left: 819px;
   position: absolute;
-  top: 837px;
-  width: 444px;
-}
-
-.front-page .group-2 {
-  height: 123px;
-  position: relative;
-  width: 448px;
-}
-
-.front-page .icon-edit {
-  height: 39px;
-  left: 0;
-  position: absolute;
-  top: 19px;
-  width: 40px;
+  top: 857px;
+  width: 1px;
 }
 
 .front-page .AI-powered-quiz {
@@ -363,11 +278,11 @@
   font-family: "Montserrat-SemiBold", Helvetica;
   font-size: 19.9px;
   font-weight: 600;
-  left: 59px;
+  left: 957px;
   letter-spacing: -0.79px;
   line-height: 27.8px;
   position: absolute;
-  top: 67px;
+  top: 903px;
   width: 385px;
 }
 
@@ -376,11 +291,11 @@
   font-family: "Montserrat-ExtraBold", Helvetica;
   font-size: 48px;
   font-weight: 800;
-  left: 59px;
+  left: 957px;
   letter-spacing: -1.92px;
   line-height: 67.2px;
   position: absolute;
-  top: 0;
+  top: 836px;
   white-space: nowrap;
 }
 
@@ -401,4 +316,3 @@
   top: 189px;
   width: 610px;
 }
-

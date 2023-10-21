@@ -6,7 +6,9 @@
   justify-content: center;
   align-items: center;
   height: 500px; /* Adjust this to the desired height */
+  margin-left: 200px;
 }
+
 
 .flashcard {
   flex: 1;
@@ -87,5 +89,22 @@
 .flashcard-navigation button:not(:disabled):hover {
   background-color: #2a5e9f;
 }
+/* Add this CSS for the "Save" button */
+.save-button {
+  position: absolute;
+  top: 70px; /* Adjust the top value to your desired position */
+  right: 70px; /* Adjust the right value to your desired position */
+  background-color: #3d80c7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
+}
 
-
+.save-button:hover {
+  background-color: #2a5e9f;
+}

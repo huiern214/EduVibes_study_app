@@ -1,135 +1,72 @@
 import React, {useState} from "react";
-import image from './image.png';
-import iconEdit from './icon_edit.png';
-import book from './book.png';
-import logo from './Logo.png';
-import mascot from './Mascot.png';
 import './Frontpage.css';
-import Line0 from "./Line 0.svg";
-import Line1 from "./Line 1.svg";
-import Logo from "./Logo.png";
-import Mascot from "./Mascot.png";
-
-
+import Mascot from './Mascot.png';
+import Logo from './Logo.png';
+import Book from './book.png';
+import Thunder from './image.png';
+import Writing from './icon_edit.png';
+import { Link } from 'react-router-dom';
 
 const FrontPage = () => {
-
-  useEffect(() => {
-    // Set the viewport dimensions
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    // Adjust the viewport settings
-    // For example, set the minimum scale to 1 to prevent user scaling
-    const minimumScale = Math.min(
-      viewportWidth / window.screen.width,
-      viewportHeight / window.screen.height
-    );
-
-    // Apply viewport settings
-    document.querySelector('meta[name="viewport"]').setAttribute(
-      'content',
-      `width=device-width, initial-scale=${minimumScale}, maximum-scale=1, user-scalable=no`
-    );
-  }, []);
-  
   return (
-      <div className="front-page">
-        <div className="div">
-          <img className="vector" alt="Vector" src="vector-1.svg" />
-          <img className="img" alt="Vector" src="vector-3.svg" />
-          <img className="eduvibes-logo" alt="Eduvibes logo" src="eduvibes-logo-removebg-preview-1.png" />
-          <img className="untitled-design" alt="Untitled design" src="untitled-design-15-2.png" />
-          <div className="big-quote">
-            <div className="flexcontainer">
-              <p className="text">
-                <span className="text-wrapper">
-                  Learning and
-                </span>
-              </p>
-              <p className="text">
-                <span className="text-wrapper">
-                  studying online,
-                </span>
-              </p>
-              <p className="text">
-                <span className="text-wrapper">made easy.</span>
-              </p>
-            </div>
-          </div>
-          <div className="small-quote">
-            <p className="gain-new-knwoledge">
-              Gain new knwoledge or earn money
-              <br />
-              while sharing your study materials.
-            </p>
-          </div>
-          <div className="learn-more">
-            <div className="frame">
-              <div className="div-wrapper">
-                <div className="text-wrapper-2">Learn more →</div>
-              </div>
-            </div>
-          </div>
-          <div className="title">
-            <div className="text-wrapper-3">E-LEARNING PLATFORM</div>
-          </div>
-          <div className="bar">
-            <div className="frame-2">
-              <div className="text-wrapper-4">EduVibes</div>
-            </div>
-            <div className="frame">
-              <div className="text-wrapper-5">Login →</div>
-              <div className="frame-3">
-                <div className="text-wrapper-6">Sign Up</div>
-              </div>
-            </div>
-          </div>
-          <div className="learning-material">
-            <div className="group">
-              <div className="text-wrapper-7">E- Learning Materials</div>
-              <img className="vector-2" alt="Vector" src="image.svg" />
-              <div className="text-wrapper-8">700 +</div>
-            </div>
-          </div>
-          <div className="active-users">
-            <img className="vector-3" alt="Vector" src="vector.svg" />
-            <div className="text-wrapper-9">Active Users</div>
-            <div className="text-wrapper-10">575 K +</div>
-          </div>
-          <div className="quiz">
-            <div className="group-2">
-              <img className="icon-edit" alt="Icon edit" src="icon-edit.png" />
-              <p className="AI-powered-quiz">AI-Powered Quiz &amp; Flashcard Generator &amp; HealGPT</p>
-              <div className="text-wrapper-11">NO. 1</div>
-            </div>
-          </div>
-        </div>
-        <img className="vector" src={image} alt="Vector" />
-        <div className="text-wrapper-3">E- Learning Materials</div>
-        <div className="text-wrapper-4">Active Users</div>
+    <div className="front-page">
         <div className="text-wrapper-5">E-LEARNING PLATFORM</div>
+        <div className="eduvibes-logo"><img src ={Logo} alt="Eduvibes logo" /></div> 
         <div className="frame-3">
           <div className="frame-4">
             <div className="text-wrapper-6">EduVibes</div>
           </div>
           <div className="frame-2">
-            <div className="text-wrapper-7">Login →</div>
+            <div className="text-wrapper-7">
+              <Link to={`/login`} className="link">Login →</Link>
+            </div>
             <div className="frame-5">
               <div className="text-wrapper-8">Sign Up</div>
             </div>
           </div>
         </div>
-        <img className="vector-2" src={book} alt="Book" />
-      <img className="icon-edit" src={iconEdit} alt="Icon edit" />
-      <div className="text-wrapper-9">700 +</div>
-      <div className="text-wrapper-10">575 K +</div>
-      <p className="AI-powered-quiz">AI-Powered Quiz & Flashcard Generator & HealGPT</p>
-      <div className="text-wrapper-11">NO. 1</div>
-      <img className="eduvibes-logo" src={logo} alt="Eduvibes logo" />
-      <img className="untitled-design" src={mascot} alt="Untitled design" />
-      </div>
-    );
+        <div className="flexcontainer">
+          <p className="text">
+            <span className="text-wrapper">
+              Learning and
+              <br />
+            </span>
+          </p>
+          <p className="text">
+            <span className="text-wrapper">
+              studying online,
+              <br />
+            </span>
+          </p>
+          <p className="text">
+            <span className="text-wrapper">made easy.</span>
+          </p>
+         
+        </div>
+        <div className="vector"><img src = {Thunder} alt="Vector"/></div>  
+        <div className="text-wrapper-3">E- Learning Materials</div>
+        <div className="text-wrapper-4">Active Users</div>
+        <p className="gain-new-knwoledge">
+          Gain new knwoledge or earn money
+          <br />
+          while sharing your study materials.
+        </p>
+          <div className="frame">
+            <div className="frame-2">
+              <div className="div-wrapper">
+                <div className="text-wrapper-2">Learn more →</div>
+              </div>
+            </div>
+          </div>
+        <div className="vector-2" ><img src={Book}alt="Vector"/></div>
+        <div className="icon-edit"><img src ={Writing} alt="Icon edit"/></div> 
+        <div className="text-wrapper-9">1000 +</div>
+        <div className="text-wrapper-10">100 K +</div>
+        <p className="AI-powered-quiz">AI-Powered Quiz &amp; Flashcard Generator &amp; HealGPT</p>
+        <div className="text-wrapper-11">NO. 1</div>
+        <div className="untitled-design"><img src={Mascot} alt="Untitled design" /></div>
+    </div>
+  );
 };
 
 export default FrontPage;
