@@ -1,149 +1,164 @@
 /* ELibraryPage.css */
-
-/* Style for the search bar */
-.search-container {
-    padding-left: 43%;
-    padding-top: 29px;
-  
+.Row{
+  max-width: 100%;
   }
-  
-  .search-input {
-      /* padding: 14px; */
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      width: 200px;
-      max-height: 29px;
-      font-size: 14px;
-      margin: 2px;
+  /* Style for the search bar */
+  .search-container {
+      padding-left: 43%;
+      padding-top: 29px;
     }
     
-  .search-input:focus {
-    outline: none;
-    border-color: #3d80c7;
-  }
+    .search-input {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 200px;
+        max-height: 29px;
+        font-size: 14px;
+        margin: 2px;
+      }
+      
+    .search-input:focus {
+      outline: none;
+      border-color: #3d80c7;
+    }
+    
+    .search-button {
+      max-height: 29px;
+      border-radius: 4px; 
+      padding: 5px 20px;
+      margin: 2px;
+      font-size: 14px; 
+      border: none; 
+      cursor: pointer; 
+      display: inline-block;
+      text-align: center;
+      vertical-align:middle;
+    }
+    
+    .search-button:hover {
+      background-color: #686868;
+      background-color: #1a83ff;
+      color: white;
+      border: #000000;
+    }
+    
+    
+  /* .search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    } */
+    
+    /* Style for the buttons */
+    /* .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    } */
+    
+    .ebook-list {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; */
+      /* display: grid; */
+      max-width: 100px;
+    }
+    
+    /* Style for each e-book card */
+    .card {
+      max-width: 1000px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }  
+    
   
-  .search-button {
-    max-height: 29px;
-    border-radius: 4px; /* Set the border radius for rounded corners */
-    padding: 5px 20px;
-    margin: 2px;
-    font-size: 14px; /* Set the font size */
-    border: none; /* Remove the default button border */
-    cursor: pointer; /* Set the cursor to indicate it's clickable */
-    display: inline-block;
-    text-align: center;
-    vertical-align:middle;
-  }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    
   
-  .search-button:hover {
-    background-color: #686868;
-    background-color: #1a83ff;
-    color: white;
-    border: #000000;
-  }
+    .card-img-top {
+      height: 200px; 
+      max-width: 150px;
+      margin-left: 0px;
+    }
+    
   
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    
+    .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    .btn-secondary {
+      background-color: #6c757d;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    .btn-secondary:hover {
+      background-color: #545b62;
+    }
+    
+    .download-section {
+      display: inline-block;
+      padding: 5px 15px; 
+      cursor: pointer;
+      background-color: #fff; 
+      border-radius: 30px;
+      text-align: center; 
+    }
+    
+    .download-section .download-text {
+      color: #000; 
+    }
   
-/* .search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  } */
+    .card-body {
+      flex: 1 1 auto;
+      padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+      color: var(--bs-card-color);
+      background-color: #DEE9F6;
+    }
   
-  /* Style for the buttons */
-  /* .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  } */
+    .inside{
+      margin-top: -5px;
+    }
   
-  .ebook-list {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-    /* display: grid; */
-    max-width: 100px;
-  }
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; 
+      margin-left: 260px;
+    }
   
-  /* Style for each e-book card */
-  .card {
-    /* width: calc(33.33% - 20px); Three cards per row with some spacing */
-    max-width: 1000px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-  }  
-  
-  /* Hover effect for e-book cards */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Style for e-book card images */
-  .card-img-top {
-    height: 200px; /* Adjust the image height as needed */
-    max-width: 150px;
-    margin-left: 70px;
-  }
-  
-  /* Style for e-book card titles */
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  /* Style for e-book card descriptions */
-  .card-text {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Style for the "View Details" button */
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  /* Style for the "Upload" button */
-  .btn-secondary {
-    background-color: #6c757d;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  /* Style for the "Share" button */
-  .btn-secondary:hover {
-    background-color: #545b62;
-  }
-  
-  .download-section {
-    display: inline-block;
-    padding: 5px 15px; /* Adjust padding as needed */
-    cursor: pointer;
-    background-color: #fff; /* Background color for the rectangle */
-    border-radius: 30px;
-    text-align: center; 
-  }
-  
-  .download-section .download-text {
-    color: #000; /* Set text color to black */
-  }
-
-  .card-body {
-    flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
-    background-color: #DEE9F6;
-  }
-
-  .inside{
-    margin-top: -5px;
-  }
+    .center-container2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; 
+      margin-left: 260px;
+      margin-top: -150px;
+    }
+    
