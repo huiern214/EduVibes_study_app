@@ -1,13 +1,28 @@
 import React, { useState } from 'react';
 import './Timetable.css';
 import { Button } from 'react-bootstrap';
+import Sejarah from './Sejarah.png';
+import Biology from './Biology.png';
+import Addmath from './Addmath.png';
+
 
 const Timetable = () => {
     const cardData = [
-        // Each object in this array represents a card
-        { id: 1, title: 'Card 1' },
-        { id: 2, title: 'Card 2' },
-        { id: 3, title: 'Card 3' },
+        {
+            id: 1,
+            title: 'Card 1',
+            imageUrl: Sejarah,
+        },
+        {
+            id: 2,
+            title: 'Card 2',
+            imageUrl: Biology,
+        },
+        {
+            id: 3,
+            title: 'Card 3',
+            imageUrl: Addmath,
+        },
         // Add more cards as needed
     ];
 
@@ -31,12 +46,16 @@ const Timetable = () => {
             </div>
             <div className="card-container">
                 {cardData.map((card) => (
-                    <div key={card.id} className="card">
-                        {/* Card content, you can customize this part */}
-                        <h2 className="card-title">{card.title}</h2>
-                        {/* Add more card content here */}
-                    </div>
-                ))}
+                     <div key={card.id} className="card">
+                     <img
+                         src={card.imageUrl}
+                         alt={card.title}
+                         className="card-image"
+                     />
+                     <h2 className="card-title">{card.title}</h2>
+                     {/* Add more card content here */}
+                 </div>
+             ))}
             </div>
         </div>
     );
