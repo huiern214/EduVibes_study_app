@@ -73,27 +73,29 @@ function LoginPage() {
         }
       }
     } else {
-      try {
-        const response = await api.post('/api/users/login', {
-          email: email,
-          password: password
-        });
+      // try {
+      //   const response = await api.post('/api/users/login', {
+      //     email: email,
+      //     password: password
+      //   });
         
-        if (response.status === 200) {
-          const userId = response.data; // Assuming the response contains the user ID
-          dispatch(loginSuccess(userId)); // Dispatch the login action with the user ID
-          if (userId < 0) {
-            navigate(`/user_management`, { replace: true }); // Redirect to the user's stocks page
-          } else { 
-            navigate(`/stocks`, { replace: true }); // Redirect to the user's stocks page
-          }
-        }
+      //   if (response.status === 200) {
+      //     const userId = response.data; // Assuming the response contains the user ID
+      //     dispatch(loginSuccess(userId)); // Dispatch the login action with the user ID
+      //     if (userId < 0) {
+      //       navigate(`/user_management`, { replace: true }); // Redirect to the user's stocks page
+      //     } else { 
+      //       navigate(`/stocks`, { replace: true }); // Redirect to the user's stocks page
+      //     }
+      //   }
 
-      } catch (error) {
-        console.log(error);
-        dispatch(loginFailure("Incorrect login credentials"));
-        setShowError(true);
-      }
+      // } catch (error) {
+      //   console.log(error);
+      //   dispatch(loginFailure("Incorrect login credentials"));
+      //   setShowError(true);
+      // }
+      // LINK TO '/forum' 
+      navigate(`/forum`, { replace: true }); // Redirect to the forum page
     }
   };  
 
