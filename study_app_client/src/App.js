@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Layout/>}>
-            <Route path="/" element={<Navigate to="/login" replace />} />
+            <Route path="/" element={<Navigate to="/frontpage" replace />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/frontpage" element={<Frotpage />} />
             <Route path="/plansprice" element={<PlansAndPricing />} />

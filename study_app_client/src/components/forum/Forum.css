@@ -44,8 +44,8 @@ body{
   }
   
   .topic {
-    display: flex;
-    align-items: center;
+    display: flexbox;
+    align-items: left;
     text-align: left;
     margin-bottom: 10px;
   }
@@ -61,6 +61,8 @@ body{
 .topic a {
     text-decoration:underline; /* Remove underline */
     color: blue; /* Set the text color */
+    font-size: 17px; /* Set the font size */
+    /* margin-bottom: 70px; */
   }
 
   p {
@@ -368,6 +370,3 @@ font-size: 12px;
   padding: 20px;
   order: 2;
 }
-
-
-

@@ -4,11 +4,13 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   max-width: 100%; /* Add this line */
 }
 
-
+img {
+  max-width: 400px; /* Add this line */
+}
 
 .front-page .div {
   background-color: #f5f7fe;
@@ -20,12 +22,17 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 17px;
-  height: 253px;
+  /* gap: 10px; */
+  height: 273px;
   left: 95px;
   position: absolute;
-  top: 282px;
+  top: 222px;
   width: 638px;
+  margin: 0px;
+}
+
+p.text {
+  margin: 0px;
 }
 
 .front-page .text {
@@ -41,10 +48,10 @@
 .front-page .text-wrapper {
   color: #000000;
   font-family: "Days One-Regular", Helvetica;
-  font-size: 73.2px;
-  font-weight: 400;
-  letter-spacing: -2.93px;
-  line-height: 10px;
+  font-size: 50.2px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1px;
 
 }
 
@@ -53,12 +60,14 @@
   font-family: "Inter-SemiBold", Helvetica;
   font-size: 22.7px;
   font-weight: 600;
-  left: 97px;
+  left: 115px;
   letter-spacing: -0.91px;
   line-height: 31.8px;
   position: absolute;
-  top: 550px;
+  top: 400px;
   width: 462px;
+  margin: 0px;
+  text-align: left;
 }
 
 .front-page .frame {
@@ -68,7 +77,7 @@
   gap: 42.58px;
   left: 95px;
   position: absolute;
-  top: 664px;
+  top: 504px;
 }
 
 .front-page .frame-2 {
@@ -77,6 +86,7 @@
   flex: 0 0 auto;
   gap: 29.8px;
   position: relative;
+  top: 0px;
 }
 
 .front-page .div-wrapper {
@@ -88,11 +98,11 @@
   gap: 14.19px;
   height: 51.09px;
   justify-content: center;
-  padding: 5.68px 25.55px;
+  padding: 5.68px 15.55px;
   position: relative;
 }
 
-.front-page .text-wrapper-2 {
+text .text-wrapper-2 {
   color: #5e7bd5;
   font-family: "Montserrat-Bold", Helvetica;
   font-size: 19.9px;
@@ -109,7 +119,7 @@
   height: 38px;
   left: 511px;
   position: absolute;
-  top: 855px;
+  top: 655px;
   width: 39px;
 }
 
@@ -122,7 +132,7 @@
   letter-spacing: -0.79px;
   line-height: 27.8px;
   position: absolute;
-  top: 906px;
+  top: 700px;
   white-space: nowrap;
 }
 
@@ -143,20 +153,20 @@
   letter-spacing: -0.79px;
   line-height: 27.8px;
   position: absolute;
-  top: 906px;
+  top: 700px;
   white-space: nowrap;
 }
 
 .front-page .text-wrapper-5 {
   color: #4683bb;
   font-family: "Montserrat-Bold", Helvetica;
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 700;
   left: 97px;
   letter-spacing: 3.36px;
   line-height: 24px;
   position: absolute;
-  top: 188px;
+  top: 158px;
   white-space: nowrap;
 }
 
@@ -167,7 +177,7 @@
   left: 140px;
   position: absolute;
   top: 68px;
-  width: 1226px;
+  width: 1100px;
 }
 
 .front-page .frame-4 {
@@ -231,7 +241,7 @@
   height: 32px;
   left: 78px;
   position: absolute;
-  top: 854px;
+  top: 655px;
   width: 37px;
 }
 
@@ -239,7 +249,7 @@
   height: 39px;
   left: 898px;
   position: absolute;
-  top: 856px;
+  top: 655px;
   width: 40px;
 }
 
@@ -252,7 +262,7 @@
   letter-spacing: -1.92px;
   line-height: 67.2px;
   position: absolute;
-  top: 833px;
+  top: 633px;
   white-space: nowrap;
 }
 
@@ -265,7 +275,7 @@
   letter-spacing: -1.92px;
   line-height: 67.2px;
   position: absolute;
-  top: 839px;
+  top: 633px;
   white-space: nowrap;
 }
 
@@ -282,11 +292,11 @@
   font-family: "Montserrat-SemiBold", Helvetica;
   font-size: 19.9px;
   font-weight: 600;
-  left: 957px;
+  left: 857px;
   letter-spacing: -0.79px;
   line-height: 27.8px;
   position: absolute;
-  top: 903px;
+  top: 700px;
   width: 385px;
 }
 
@@ -299,7 +309,7 @@
   letter-spacing: -1.92px;
   line-height: 67.2px;
   position: absolute;
-  top: 836px;
+  top: 633px;
   white-space: nowrap;
 }
 
@@ -313,11 +323,10 @@
 }
 
 .front-page .untitled-design {
-  height: 562px;
-  left: 756px;
+  height: 262px;
+  left: 556px;
   object-fit: cover;
   position: absolute;
   top: 189px;
   width: 610px;
 }
-
